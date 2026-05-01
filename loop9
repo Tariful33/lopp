@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    for (int i = 6; i <= 900; i += 3) {
+        printf("%d ", i);
+    }
+    return 0;
+}
