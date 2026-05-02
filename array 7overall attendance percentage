@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+{
+    int attendance[] = {1, 0, 1, 1, 1, 0, 1, 0, 1, 1}; 
+      int present = 0, absent = 0;
+    float percentage;
+    for(int i = 0; i < 10; i++) {
+        if(attendance[i] == 1) {
+            present++;
+        } else {
+            absent++;
+        }
+    }
+    percentage = (present * 100.0) / 10;
+    printf("Total Present: %d\n", present);
+    printf("Total Absent: %d\n", absent);
+    printf("Overall Attendance Percentage: %.2f%%\n", percentage);
+
+    return 0;
+}
