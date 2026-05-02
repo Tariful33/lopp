@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int secret = 1234;
+    int guess;
+    printf("Enter password: ");
+    scanf("%d", &guess);
+
+    while (guess != secret) {
+        printf("Access Denied! Try again: ");
+        scanf("%d", &guess);
+    }
+    printf("Access Granted!");
+    return 0;
+}
