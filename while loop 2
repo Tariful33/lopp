@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+    int input = 0;
+    while (input != -10) {
+        printf("Enter a number (-10 to quit): ");
+        scanf("%d", &input);
+        
+        if(input != -10) {
+            printf("You entered: %d\n", input);
+        }
+    }
+    printf("Good boy!");
+    return 0;
+}
