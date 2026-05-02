@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() 
+{
+    int num = 0;
+    while (num != 7) {
+        printf("guess 1-10 to stop: ");
+        scanf("%d", &num);
+    }
+    printf("Correct! Loop stopped.");
+    return 0;
+}
