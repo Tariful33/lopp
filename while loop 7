@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int target = 10;
+    int guess = 0;
+
+    printf("Guess the number (0-10): ");
+    
+    while (guess != target) {
+        scanf("%d", &guess);
+        if (guess != target) {
+            printf("Wrong! Try again: ");
+        }
+    }
+    printf("You got, The number was %d.", target);
+    return 0;
+}
