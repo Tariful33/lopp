@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() 
+{
+    int nums[2] = {5, 10};
+    nums[0] = 100;
+    printf("%d", nums[0]);
+    return 0;
+}
