@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+    int score = 1;
+    int total = 0;
+
+    while (score != 0) {
+        printf("Enter score (0 to see total): ");
+        scanf("%d", &score);
+        total = total + score;
+    }
+
+    printf("Final Total: %d", total);
+    return 0;
+}
